@@ -1,0 +1,135 @@
+*{
+    margin:0px;
+    border:0px;
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+
+#bo-dy{
+    background-color:white;
+    color: black;
+}
+
+.c{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.calculator{
+  display: grid;
+    position: relative;
+}
+
+.calculator .val{
+    grid-column: 1/span 4;
+    width: 560px;
+    height: 70px;
+    text-align: right;
+    /* background-color: black; */
+    
+    font-size: 50px;
+    outline: none;
+    padding: 10px;
+    border-radius: 5px;
+}
+
+
+.calculator span{
+    display: grid;
+    width: 80px;
+    height: 80px;
+  
+    place-items: center;
+    border-radius:50%;
+    font-size:25px;
+    /* transition:0.2s; */
+}
+
+
+.calculator span:active{
+    background-color:	#E0E0E0;
+    
+}
+
+
+.calculator .clear{
+    grid-column:1/span2;
+    color:#FF0066;
+
+}
+
+.dropdown{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.dd{
+    padding-left: 400px;
+    padding-top: 25px;
+ 
+ }
+ 
+ #ddd1{
+     visibility: hidden;
+  
+ }
+ 
+ .dd1{
+     width: 110px;
+     height: 30px;
+     padding-top: 5px;
+     font-family: Verdana, Geneva, Tahoma, sans-serif;
+     background-color: #E0E0E0;
+     border-top-left-radius: 2px;
+     border-top-right-radius: 2px;
+     border-bottom-right-radius: 0px;
+     border-bottom-left-radius: 0px;
+ }
+ .dd1 input{
+     visibility: hidden;
+ }
+
+ .ld1 input{
+     visibility: hidden;
+ }
+
+#ldd1{
+    visibility: hidden;
+}
+
+ .ld1{
+    width: 110px;
+    height: 30px;
+    padding-top: px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    background-color: #E0E0E0;
+    border-top-left-radius: 0px;
+    border-top-right-radius: 0px;
+    border-bottom-right-radius: 2px;
+    border-bottom-left-radius: 2px;
+   
+ }
+ 
+#d-d{
+    background-color: white;
+     outline: none;
+ }
+ 
+ .fas{
+     font-size: 20px;
+ }
+
+footer{
+    color:#FF0066 ;
+}
+
+@media only screen and (max-width:768px){
+   .c .calculator .val{
+        width: 320px;
+        height: 70px;
+    }
+    
+}
